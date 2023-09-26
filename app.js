@@ -1,13 +1,10 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+var express = require('express');
+var app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+    res.send("익스프레스 테스트");
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(3000, (req, res) => {
+    console.log("서버 실행중..");
 });
-
-
